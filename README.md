@@ -7,4 +7,8 @@
 
 ### 初探
 
+[RN文档](https://facebook.github.io/react-native/docs/getting-started.html)
+
+[RN中文文档](http://reactnative.cn/)
+
 [UIExplorer](https://github.com/facebook/react-native/tree/master/Examples/UIExplorer)
