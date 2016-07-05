@@ -102,7 +102,7 @@ class KeTabsView extends Component {
           icon={iconUser.normal}
           selectedIcon={iconUser.selected}
         >
-          <ItemSearch />
+          <View />
         </TabBar.Item>
 
 

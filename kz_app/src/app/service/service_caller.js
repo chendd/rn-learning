@@ -4,7 +4,7 @@
  */
 
 
-import {XIN_SERVICE_ENV} from "common/Config"
+import {KE_SERVICE_ENV} from "common/Config"
 
 const forceMocks = [
 ]

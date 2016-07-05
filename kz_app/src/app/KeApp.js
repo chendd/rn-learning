@@ -90,7 +90,6 @@ class App extends Component {
           <KeTitleBar />
 
           {current && <KeNavigator /> }
-          <PickerPop />
         </View>
       </Provider>
     );
