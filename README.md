@@ -13,6 +13,7 @@
 
 [UIExplorer](https://github.com/facebook/react-native/tree/master/Examples/UIExplorer)
 
+[FlexBox文档](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
 
 ### kz-app
 1. 进入kz-app/src目录执行npm install
