@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/weimeng/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.2.0/6f8a4b1435c9e0a6f9c5fe4a1be46627b848fd0c/okhttp-urlconnection-3.2.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="6f8a4b1435c9e0a6f9c5fe4a1be46627b848fd0c">
+        <dex dex="/Users/weimeng/dev/kz_app/src/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.2.0-500f78bb58264232253813fe33d94c5f9b0ff688.jar" />
+    </item>
+    <item
+        jar="/Users/weimeng/dev/kz_app/src/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.27.1/jars/libs/infer-annotations-1.5.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="cf8913d42e36b1d1ca3440081c838f8c463b6b32">
+        <dex dex="/Users/weimeng/dev/kz_app/src/android/app/build/intermediates/pre-dexed/debug/infer-annotations-1.5-aa9f8f5db4e9ab16bebb05e926fc8a8e2317abf7.jar" />
+    </item>
+    <item
+        jar="/Users/weimeng/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/Users/weimeng/dev/kz_app/src/android/app/build/intermediates/pre-dexed/debug/library-2.4.0-01f466d6343a1c5f8f6dd81c9102d5507109447b.jar" />
+    </item>
+    <item
+        jar="/Users/weimeng/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.8.0/5ea7af56cc7c567ed9856d99efb30740e9b17ff/okio-1.8.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="05ea7af56cc7c567ed9856d99efb30740e9b17ff">
+        <dex dex="/Users/weimeng/dev/kz_app/src/android/app/build/intermediates/pre-dexed/debug/okio-1.8.0-3ab04376af1d8840214d847fcee18599976fe18d.jar" />
+    </item>
+    <item
+        jar="/Users/weimeng/dev/kz_app/src/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/0.10.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="5e88a2a26ac71cd7f8fd8bd9f9381fa06d1a47a3">
+        <dex dex="/Users/weimeng/dev/kz_app/src/android/app/build/intermediates/pre-dexed/debug/classes-8fbddc3ba2a47c2530907e16f5c01b512471de98.jar" />
+    </item>
+    <item
+        jar="/Users/weimeng/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="/Users/weimeng/dev/kz_app/src/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0-9795901ac61ca0e0fb2500a96b707dbd14c058ce.jar" />
+    </item>
+    <item
+        jar="/Users/weimeng/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="/Users/weimeng/dev/kz_app/src/android/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.1-0d45058fb931536a930ae56a80068c45beb50598.jar" />
+    </item>
+    <item
+        jar="/Users/weimeng/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.2.3/1a0113da2cab5f4c216b4e5e7c1dbfaa67087e14/jackson-core-2.2.3.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1a0113da2cab5f4c216b4e5e7c1dbfaa67087e14">
+        <dex dex="/Users/weimeng/dev/kz_app/src/android/app/build/intermediates/pre-dexed/debug/jackson-core-2.2.3-db0b24c939a048e3741051686d5c26602a1ab434.jar" />
+    </item>
+    <item
+        jar="/Users/weimeng/dev/kz_app/src/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/Users/weimeng/dev/kz_app/src/android/app/build/intermediates/pre-dexed/debug/classes-34f89d7a1a1c8a4520727f9f4ca9ecb88943ea60.jar" />
+    </item>
+    <item
+        jar="/Users/weimeng/dev/kz_app/src/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.27.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="bfc15bd6259de0bd224e88f805ccbb1c1fe44353">
+        <dex dex="/Users/weimeng/dev/kz_app/src/android/app/build/intermediates/pre-dexed/debug/classes-fa1350c7920aaa1e5cc884f0d3244379648fe618.jar" />
+    </item>
+    <item
+        jar="/Users/weimeng/dev/kz_app/src/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="4356e230a981d1bbf047d848b91bc0d9b7c5bacc">
+        <dex dex="/Users/weimeng/dev/kz_app/src/android/app/build/intermediates/pre-dexed/debug/classes-2cbbc4fadbeabdb1b9a983aa9eab3b0b723bd518.jar" />
+    </item>
+    <item
+        jar="/Users/weimeng/dev/kz_app/src/android/app/build/intermediates/exploded-aar/KZAppProject/react-native-camera/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="578e406fc01448672dd5b93c60b09ec1cec336dd">
+        <dex dex="/Users/weimeng/dev/kz_app/src/android/app/build/intermediates/pre-dexed/debug/classes-d73effcd47e4690d38abb75845623b2ebc3063a6.jar" />
+    </item>
+    <item
+        jar="/Users/weimeng/dev/kz_app/src/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/0.10.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="857099e23430445aeb65cf703d5adf646ff280f1">
+        <dex dex="/Users/weimeng/dev/kz_app/src/android/app/build/intermediates/pre-dexed/debug/classes-d14f743f98bd2850a01d628b81b261e8cf109f5d.jar" />
+    </item>
+    <item
+        jar="/Users/weimeng/dev/kz_app/src/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/0.10.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="6e1ed00013584399dbe27d45ac1fd6a9828c9fca">
+        <dex dex="/Users/weimeng/dev/kz_app/src/android/app/build/intermediates/pre-dexed/debug/classes-ee13376116ea8ce4647221de98feb8481e013d74.jar" />
+    </item>
+    <item
+        jar="/Users/weimeng/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-ws/3.2.0/1ea229d6984444c8c58b8e97ba4c8429d9d135b3/okhttp-ws-3.2.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1ea229d6984444c8c58b8e97ba4c8429d9d135b3">
+        <dex dex="/Users/weimeng/dev/kz_app/src/android/app/build/intermediates/pre-dexed/debug/okhttp-ws-3.2.0-453112de5f1f54ab234a4f30c1870b0de90ca7f6.jar" />
+    </item>
+    <item
+        jar="/Users/weimeng/dev/kz_app/src/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/0.10.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="65f0c887ee1f57cd0ea65b228e39b7f35372b798">
+        <dex dex="/Users/weimeng/dev/kz_app/src/android/app/build/intermediates/pre-dexed/debug/classes-12d07b5d1ab67f2471ed5f928ab4e1968b7198d6.jar" />
+    </item>
+    <item
+        jar="/Users/weimeng/dev/kz_app/src/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/0.10.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d323cf4983bdfce7136a1ce5e32710e1b36b20fe">
+        <dex dex="/Users/weimeng/dev/kz_app/src/android/app/build/intermediates/pre-dexed/debug/classes-c158a0296a82b4bc3762a130b109b11f5532e5f1.jar" />
+    </item>
+    <item
+        jar="/Users/weimeng/dev/kz_app/src/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="/Users/weimeng/dev/kz_app/src/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.1-c8d08b9b257cba603a92ff4183fcf54d5ac98fc7.jar" />
+    </item>
+    <item
+        jar="/Users/weimeng/dev/kz_app/src/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="/Users/weimeng/dev/kz_app/src/android/app/build/intermediates/pre-dexed/debug/classes-700aa5c68ca24748c695306ba0d32b515aed4ed6.jar" />
+    </item>
+    <item
+        jar="/Users/weimeng/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.2.0/f7873a2ebde246a45c2a8d6f3247108b4c88a879/okhttp-3.2.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="f7873a2ebde246a45c2a8d6f3247108b4c88a879">
+        <dex dex="/Users/weimeng/dev/kz_app/src/android/app/build/intermediates/pre-dexed/debug/okhttp-3.2.0-b910d964aa29a15f249f9bc1eafb2a341b428b1f.jar" />
+    </item>
+    <item
+        jar="/Users/weimeng/dev/kz_app/src/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/0.10.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="53880c6e24bb574c2f03fd0f743a268ccc502f45">
+        <dex dex="/Users/weimeng/dev/kz_app/src/android/app/build/intermediates/pre-dexed/debug/classes-eb2a354cdcbe4c62347e5b691be6921f3cffba09.jar" />
+    </item>
+    <item
+        jar="/Users/weimeng/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.1.4/129874135e6081269ace2312092031558865de12/bolts-android-1.1.4.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="129874135e6081269ace2312092031558865de12">
+        <dex dex="/Users/weimeng/dev/kz_app/src/android/app/build/intermediates/pre-dexed/debug/bolts-android-1.1.4-57e1eb31a32a38935e9cdff3114a179ad64e9b6e.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,253 @@
+<<<<<<< HEAD
+/**
+ * Created by weimeng on 16/4/25.
+ * © 2016 NCF GROUP ALL RIGHTS RESERVED
+ */
+
+const confs =   {
+  Home : {
+    name : "Home",
+    get Component() {return require("tabs/XinTabsView") }
+  },
+  FamilyStatus : {
+    name : "FamilyStatus",
+    get Component() { return require("apply/FamilyStatus") }
+  },
+  WorkingStatus : {
+    name : "WorkingStatus",
+    get Component() { return require("apply/WorkingStatus") }
+  },
+  FaceRecognition : {
+    name : "FaceRecognition",
+    get Component() { return require("apply/FaceRecognition") }
+  },
+  ProductCategoryList : {
+    name : "ProductCategoryList",
+    get Component() { return require("product/ProductCategoryList") }
+  },
+  ProductDetail:{
+    name:"ProductDetail",
+    get Component() { return require("product/ProductDetail") }
+  },
+  Login: {
+    name : "Login",
+    get Component() { return require("user/LoginPage") }
+  },
+  LoginPop : {
+    name : "LoginPop",  
+    get Component() { return require('user/LoginPopPage')}
+  },
+  LoginPopPageForFirstp2p : {
+    name : "LoginPopPageForFirstp2p",
+    get Component() { return require('user/LoginPopPageForFirstp2p')}
+  },
+  Register : {
+    name : "Register",
+    get Component() { return require("user/RegisterPanel") },
+  },
+  ForgetPassword : {
+    name : "ForgetPassword",
+    get Component() { return require("user/ForgetPassword") }
+  },
+  ForgetPasswordStep2 : {
+    name : "ForgetPasswordStep2",
+    get Component() { return require("user/ForgetPasswordStep2") }
+  },
+  ProductScanner : {
+    name : "ProductScanner",
+    get Component() { return require("product/scanner/ProductScanner") }
+  },
+  OCRCard : {
+    name : "OCRCard",
+    get Component() { return require("user/ocr/OCRCardView") }
+  },
+  FeedbackPage : {
+    name : "FeedbackPage",
+    get Component() { return require("user/FeedbackPage") }
+  },
+  PurchasedGoodsPage : {
+    name : "PurchasedGoodsPage",
+    get Component() { return require("user/PurchasedGoodsPage") }
+  },
+  MyProgressPage : {
+    name : "MyProgressPage",
+    get Component() { return require("user/MyProgressPage") }
+  },
+  ProgressDetailPage : {
+    name : "ProgressDetailPage",
+    get Component() { return require("user/ProgressDetailPage") }
+  },
+  PersonalInfoPage : {
+    name : "PersonalInfoPage",
+    get Component() { return require("user/PersonalInfoPage") }
+  },
+  BankInfoPage : {
+    name : "BankInfoPage",
+    get Component() { return require("user/BankInfoPage") }
+  },
+  ApplicationInfoPage : {
+    name : "ApplicationInfoPage",
+    get Component() { return require("user/ApplicationInfoPage") }
+  },
+  Bill : {
+    name : "Bill",
+    get Component () { return require("apply/Bill") }
+  },
+  Bills : {
+    name : "Biils",
+    get Component () { return require("tabs/BillsView") }
+  },
+  ApplyWaiting : {
+    name : "ApplyWaiting",
+    get Component () { return require("apply/Pending")}
+  },
+  ApplyProcess : {
+    name : "ApplyProcess",
+    get Component () { return require("apply/Process")}
+  },
+  ConfirmReceiptPage: {
+    name : "ConfirmReceiptPage",
+    get Component () { return require("product/ConfirmReceiptPage")}
+  },
+  ApplySuccessPage: {
+    name : "ApplySuccessPage",
+    get Component () { return require("apply/ApplySuccessPage")}
+  },
+  ApplySuccessPageTwo: {
+    name : "ApplySuccessPageTwo",
+    get Component () { return require("apply/ApplySuccessPageTwo")}
+  },
+  ApplyContract : {
+    name : "ApplyContract",  
+    get Component() { return require("apply/ApplyContract")}
+  }
+}
+confs.initial = confs.LoginPopPageForFirstp2p
+export const PagesConfig = confs
+=======
+/**
+ * Created by weimeng on 16/4/25.
+ * © 2016 NCF GROUP ALL RIGHTS RESERVED
+ */
+
+const confs =   {
+  Home : {
+    name : "Home",
+    get Component() {return require("tabs/XinTabsView") }
+  },
+  FamilyStatus : {
+    name : "FamilyStatus",
+    get Component() { return require("apply/FamilyStatus") }
+  },
+  WorkingStatus : {
+    name : "WorkingStatus",
+    get Component() { return require("apply/WorkingStatus") }
+  },
+  FaceRecognition : {
+    name : "FaceRecognition",
+    get Component() { return require("apply/FaceRecognition") }
+  },
+  ProductCategoryList : {
+    name : "ProductCategoryList",
+    get Component() { return require("product/ProductCategoryList") }
+  },
+  ProductDetail:{
+    name:"ProductDetail",
+    get Component() { return require("product/ProductDetail") }
+  },
+  Login: {
+    name : "Login",
+    get Component() { return require("user/LoginPage") }
+  },
+  Register : {
+    name : "Register",
+    get Component() { return require("user/RegisterPanel") },
+  },
+  ForgetPassword : {
+    name : "ForgetPassword",
+    get Component() { return require("user/ForgetPassword") }
+  },
+  ForgetPasswordStep2 : {
+    name : "ForgetPasswordStep2",
+    get Component() { return require("user/ForgetPasswordStep2") }
+  },
+  TestPage : {
+    name : "TextPage",
+    get Component() { return require("user/TestPage") }
+  },
+  ProductScanner : {
+    name : "ProductScanner",
+    get Component() { return require("product/scanner/ProductScanner") }
+  },
+  OCRCard : {
+    name : "OCRCard",
+    get Component() { return require("user/ocr/OCRCardView") }
+  },
+  FeedbackPage : {
+    name : "FeedbackPage",
+    get Component() { return require("user/FeedbackPage") }
+  },
+  PurchasedGoodsPage : {
+    name : "PurchasedGoodsPage",
+    get Component() { return require("user/PurchasedGoodsPage") }
+  },
+  MyProgressPage : {
+    name : "MyProgressPage",
+    get Component() { return require("user/MyProgressPage") }
+  },
+  ProgressDetailPage : {
+    name : "ProgressDetailPage",
+    get Component() { return require("user/ProgressDetailPage") }
+  },
+  PersonalInfoPage : {
+    name : "PersonalInfoPage",
+    get Component() { return require("user/PersonalInfoPage") }
+  },
+  BankInfoPage : {
+    name : "BankInfoPage",
+    get Component() { return require("user/BankInfoPage") }
+  },
+  ApplicationInfoPage : {
+    name : "ApplicationInfoPage",
+    get Component() { return require("user/ApplicationInfoPage") }
+  },
+  Bill : {
+    name : "Bill",
+    get Component () { return require("apply/Bill") }
+  },
+  Bills : {
+    name : "Biils",
+    get Component () { return require("tabs/BillsView") }
+  },
+  ApplyWaiting : {
+    name : "ApplyWaiting",
+    get Component () { return require("apply/Pending")}
+  },
+  ApplyProcess : {
+    name : "ApplyProcess",
+    get Component () { return require("apply/Process")}
+  },
+  ConfirmReceiptPage: {
+    name : "ConfirmReceiptPage",
+    get Component () { return require("product/ConfirmReceiptPage")}
+  },
+  ApplySuccessPage: {
+    name : "ApplySuccessPage",
+    get Component () { return require("apply/ApplySuccessPage")}
+  },
+  ApplySuccessPageTwo: {
+    name : "ApplySuccessPageTwo",
+    get Component () { return require("apply/ApplySuccessPageTwo")}
+  },
+  ApplyContract : {
+    name : "ApplyContract",
+    get Component() { return require("apply/ApplyContract")}
+  },
+  AboutUsPage : {
+    name : "AboutUsPage",
+    get Component() { return require("user/AboutUsPage")}
+  },
+}
+confs.initial = confs.Login
+export const PagesConfig = confs
+>>>>>>> origin/dev_UI
