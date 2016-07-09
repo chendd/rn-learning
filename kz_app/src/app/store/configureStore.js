@@ -14,7 +14,7 @@ import track from "./track"
 import {persistStore, autoRehydrate} from 'redux-persist';
 
 // reducers
-import { navigator } from "../reduers/navigator"
+import { navigator } from "react-native-redux-navigator"
 import { tab } from "../reduers/tab"
 import { poper } from '../reduers/poper'
 import { user } from '../reduers/user'
@@ -29,7 +29,6 @@ const createStoreWithMiddleware = applyMiddleware(
 const reducer = combineReducers({
   navigator,
   tab,
-  poper,
   user
 });
 
