@@ -10,7 +10,7 @@
     "npm": "^3.9.6",
     "ramda": "^0.21.0",
     "react": "^15.1.0",
-    "react-native": "^0.27.1",
+    "react-native": "^0.29.0",
     "react-native-camera": "git+https://github.com/lwansbrough/react-native-camera.git",
     "react-native-dropdown": "https://github.com/ramroll/react-native-dropdown.git#fix-rn-components",
     "react-native-picker-android": "^1.0.2",
