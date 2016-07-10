@@ -16,19 +16,22 @@ import {
   Title,
   
 } from 'common/index'
+
+
+import {setValue, getValue} from "./lib/counter"
 class Example1 extends Component{
 
   constructor(){
     super()  
     this.state = {
-      c : 0
+      c : getValue()
     }
   }
   
   _press(){
-    
+    setValue(this.state.c + 1)
     this.setState({
-      c : this.state.c + 1 
+      c : getValue() 
     })
   }
   

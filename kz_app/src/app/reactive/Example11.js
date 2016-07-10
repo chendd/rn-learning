@@ -13,28 +13,41 @@ import {
 
 import {
   BackButton,
-  Title
+  Title,
+  
 } from 'common/index'
 
 
-import {setValue, getValue} from "./lib/counter"
-class Example2 extends Component{
+import {on, trigger} from './lib/event'
+class Example11 extends Component{
 
   constructor(){
-    super()
+    super()  
     this.state = {
-      c : getValue() 
+      c : 0
     }
+    
   }
-  _press(){
-    this.setState({
-      c : setValue(this.state.c + 1) 
+  
+  componentDidMount() {
+    on("counter-changed", (c) => {
+      this.setState({
+        c  
+      }) 
     })
   }
+  
+  _press(){
+    trigger('counter-changed', this.state.c + 1)
+    this.setState({
+      c : this.state.c + 1  
+    })
+  }
+  
   render(){
     return(
       <View>
-        <Text>This is example2~, counter is {this.state.c}</Text>
+        <Text>This is example1~, counter is {this.state.c}</Text>
         <TouchableOpacity onPress={this._press.bind(this)}><Text>+</Text></TouchableOpacity>
       </View>
     )
@@ -42,11 +55,12 @@ class Example2 extends Component{
 }
 
 
-const __module = Example2
+
+const __module = Example1
 
 __module.TitleBar = {
   LeftButton : <BackButton />,
-  Title : <Title>Example2</Title>
+  Title : <Title>Example1</Title>
 
 }
 module.exports = __module
