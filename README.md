@@ -29,3 +29,6 @@
 ### react / react native （在线工具)
 [React](https://jsfiddle.net/reactjs/69z2wepo/)
 [React Native](https://rnplay.org/)
+
+### react-native-redux-navigator
+[参考网址](https://github.com/ramroll/react-native-redux-navigator)
