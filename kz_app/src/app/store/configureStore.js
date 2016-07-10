@@ -21,9 +21,9 @@ import { user } from '../reduers/user'
 
 var isDebuggingInChrome = __DEV__ && !!window.navigator.userAgent;
 const createStoreWithMiddleware = applyMiddleware(
+  track,
   thunk, 
   promise,
-  track
 )(createStore);
 
 const reducer = combineReducers({

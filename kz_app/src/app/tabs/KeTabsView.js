@@ -26,6 +26,8 @@ import {
 import {KeHomePage} from "./KeHomePage"
 import {ItemCategorySelection} from "item/ItemCategorySelection"
 
+import ExampleList from "reactive/ExampleList"
+
 import {getStore} from "store/configureStore"
 import ItemSearch from "item/ItemSearch"
 
@@ -111,7 +113,7 @@ class KeTabsView extends Component {
           icon={iconUser.normal}
           selectedIcon={iconUser.selected}
         >
-          <View />
+          <ExampleList />
         </TabBar.Item>
 
 
