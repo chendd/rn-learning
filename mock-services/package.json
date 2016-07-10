@@ -1,6 +1,0 @@
-{
-  "name": "mock-services",
-  "dependencies": {
-    "express": "^4.14.0"
-  }
-}
