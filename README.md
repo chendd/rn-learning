@@ -18,3 +18,9 @@
 ### kz-app
 1. 进入kz-app/src目录执行npm install
 2. 执行rnpm link
+
+### promise demo
+演示promise 的使用
+- 进入promise-examples目录，执行npm install
+- 执行node express.js运行服务
+- 执行node promiseX.js看各个例子
