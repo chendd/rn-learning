@@ -18,6 +18,7 @@ import {
 
 import {setValue, getValue} from "./lib/counter"
 import {on, remove} from './lib/event'
+import {connector} from "./lib/connector"
 class Example5 extends Component{
 
   render(){
@@ -34,6 +35,9 @@ class __Example1 extends Component{
   
 
   _press(){
+    // System event (on Press)
+    // -> Intent (action)
+    // action : +1
     setValue(getValue() + 1)
   }
 
@@ -47,42 +51,9 @@ class __Example1 extends Component{
   }
 }
 
-let Example1 = connector('counter-changed', __Example1)
+// react-redux  - connect()
+let Example1 = connector('counter-changed')(__Example1)
 
-
-const connector = (name, __Component) => {
-  
-  class SimpleEventConnector extends Component{
-    
-    constructor(){
-      super()
-      
-      this.state = {
-        data
-      }
-      
-      this.__handler = ((data) => {
-        this.setState({
-          data 
-        })
-      }).bind(this)
-    }
-    componentDidMount(){
-      on(name, this.__handler)
-    }
-    
-    componentWillUnmout(){
-      
-      remove(name, this.__handler)
-      
-    }
-    render(){
-      return <__Component data={data} />  
-    }  
-  }
-  
-  return SimpleEventConnector
-} 
 
 
 

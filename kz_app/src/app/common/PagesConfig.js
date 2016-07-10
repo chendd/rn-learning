@@ -47,6 +47,11 @@ const confs =   {
   Example5 : {
     name : "Example5",
     get Component() { return require("reactive/Example5")}
+  },
+
+  Example6 : {
+    name : "Example6",
+    get Component() { return require("reactive/Example6")}
   }
 }
 confs.initial = confs.Home

@@ -119,7 +119,6 @@ class App extends Component {
         <View style={styles.container}>
           <StatusBar
             backgroundColor="rgba(0,0,0,0.2)"
-            networkActivityIndicatorVisible={true}
             style={styles.statusBar}
           />
 

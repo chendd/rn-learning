@@ -32,6 +32,7 @@ class ExampleList extends Component{
         <ExampleRoute no="3" />
         <ExampleRoute no="4" />
         <ExampleRoute no="5" />
+        <ExampleRoute no="6" />
       </ScrollView>
     )
   }

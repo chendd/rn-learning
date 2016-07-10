@@ -18,18 +18,20 @@ import { navigator } from "react-native-redux-navigator"
 import { tab } from "../reduers/tab"
 import { poper } from '../reduers/poper'
 import { user } from '../reduers/user'
+import {calculate} from 'reactive/lib/plus1/reduer'
 
 var isDebuggingInChrome = __DEV__ && !!window.navigator.userAgent;
 const createStoreWithMiddleware = applyMiddleware(
-  track,
   thunk, 
   promise,
+  track,
 )(createStore);
 
 const reducer = combineReducers({
   navigator,
   tab,
-  user
+  user,
+  calculate
 });
 
 let store = null
