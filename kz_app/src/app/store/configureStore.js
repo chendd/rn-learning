@@ -16,7 +16,6 @@ import {persistStore, autoRehydrate} from 'redux-persist';
 // reducers
 import { navigator } from "react-native-redux-navigator"
 import { tab } from "../reduers/tab"
-import { poper } from '../reduers/poper'
 import { user } from '../reduers/user'
 import {calculate} from 'reactive/lib/plus1/reduer'
 
