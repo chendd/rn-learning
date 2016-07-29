@@ -17,7 +17,7 @@
 // 请求方式post
 // 返回值 
 {
-    success : true
+    user_id : 111
 }
 
 ```
@@ -39,7 +39,23 @@ jump_to跳转页面， 无返回
 
 ### 思考
 问题的核心在于用户操作过程中，有少量逻辑需要客户端处理， 而实际需求当中遇到的逻辑可能更为复杂。 目前其实是一个3个步骤+1个逻辑判断。 
-随着逻辑的复杂， 每一个地方如果都需要做结果处理和异常处理， 就变得特别复杂。 而且系统复杂度上升过程中，逻辑如果写在视图里，会让逻辑无法重用。 
+随着逻辑的复杂， 每一个地方如果都需要做结果处理和异常处理， 就变得特别复杂。 另外在系统复杂度上升过程中，逻辑如果写在视图里，会让逻辑无法重用。 
+
+总结一下，两点：
+1. 首先不能写这样的代码,这样一层一层嵌套下去没完没了，如果需求复杂无穷无尽， 而且每层都要catch异常,非常麻烦。 
+``` javascript
+dispatch( http_post('/user/login', {user_name, password}) )
+  .then( {success} => {
+      dispatch( http_get('/user_account') )
+          .then( ...)
+          // ...
+  }) 
+  .catch(ex => {
+  })
+```
+
+2. 其次上述代码应该想办法封装成纯函数（为什么要使用纯函数可以参考函数式变成的书籍 ），不能写在视图里， 否则如果有两个地方要用就要copy来copy去，痛苦无比
+
 
 ### 正确解法
 为了解决上述问题， 应该使用es6的asyc语法配合redux-thunk
@@ -52,7 +68,7 @@ export const login = (user_name, password) => {
     
     return async dispatch => {
         
-        await dispatch ( http_post('/user/login', {user_name, password}) )
+        const {user_id} = await dispatch ( http_post('/user/login', {user_name, password}) )
         const {balance} = await dispatch( http_get('/user/account') )
         
         if(balance === 0) {
@@ -76,4 +92,48 @@ _press() {
     })
 }
 ...
+```
+
+这样做的好处：
+1. 逻辑层是纯函数
+2. 逻辑层可以复用
+3. 异常在使用曾的catch里面处理， 不用嵌套
+4. 扩展性好
+
+
+### 什么是扩展性好？ 
+我们增加一个需求， 比如说在用户登录时需要判断有没有置手势密码， 再充值。 
+
+那么我们需要写一个设置手势密码的函数
+``` javascript
+export const check_gesture_password = (user_id) => {
+
+   if( !user_has_gesture_password(user_id) ) {
+       jump_to("SetGesturePassword")
+       return false
+   }
+   return true
+
+}
+```
+
+将来我们可以把这段代码很轻松的加到login里面
+``` javascript 
+export const login = (user_name, password) => {
+    
+    return async dispatch => {
+        
+        const {user_id} = await dispatch ( http_post('/user/login', {user_name, password}) )
+        if(!check_gesture_password(user_id)){
+            return
+        }
+        const {balance} = await dispatch( http_get('/user/account') )
+        
+        if(balance === 0) {
+            dispatch (jump_to("Recharge"))
+        } else {
+            dispatch (jump_to("Home") )
+        }
+    }
+}
 ```
