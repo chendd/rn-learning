@@ -7,6 +7,11 @@
 
 ### 抽象
 
+#### 需求描述
+
+我们的app在用户登陆时要检查用户的余额，如果有余额，那么让用户去继续使用app，如果没有， 让用户去充值。 
+
+#### 接口描述
 用户登录： /user/login 
 ``` javascript
 // 请求方式post
@@ -24,9 +29,47 @@
     balance : 2000  //余额2000
 }
 ```
+#### redux api
+为了满足上述需求， 我们的redux里面有若干个方法
+http_get, http_post，jump_to
 
-### 通常的方式
+
+http_get和http_post发送网络请求,  返回promise
+jump_to跳转页面， 无返回
+
+### 正确解法
+为了解决上述问题， 应该使用es6的asyc语法配合redux-thunk
 
 ``` javascript
+// file : login.action.js
+import {http_get, http_post, jump_to} from 'common/actions'
 
+export const login = (user_name, password) => {
+    
+    return async dispatch => {
+        
+        await dispatch ( http_post('/user/login', {user_name, password}) )
+        const {balance} = await dispatch( http_get('/user/account') )
+        
+        if(balance === 0) {
+            dispatch (jump_to("Recharge"))
+        } else {
+            dispatch (jump_to("Home") )
+        }
+    }
+}
+
+
+// file : 使用的react组件
+
+...
+_press() {
+    const {user_name, password} = this.state
+
+    const promise = this.props.dispatch( login(user_name, password) )
+    promise.catch( ex => {
+        // 显示错误
+    })
+}
+...
 ```
